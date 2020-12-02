@@ -1,17 +1,35 @@
 .slider{
+  position: relative;
   display: flex;
   justify-content: center;
-  /* background-color: red; */
+  align-items: center;
+  /* background-color: yellow; */
 
+
+}
+.slider__RightArrow{
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: red;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+
+}
+.slider__LeftArrow{
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: red;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
 }
 .slider > img{
-  width: 50;
+  border-radius: 10px;
   height: 300px;
-  
 }
-  /* position: relative;
-
-  /* justify-content: center;
-  align-items: center;
-  object-fit: contain; */
 
