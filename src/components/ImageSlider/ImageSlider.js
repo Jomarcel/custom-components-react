@@ -22,10 +22,22 @@ const ImageSlider = ({ slides }) => {
     <div className="slider">
       <FaArrowCircleRight className="slider__RightArrow" onClick={nextSlide} />
       <FaArrowCircleLeft className="slider__LeftArrow" onClick={prevSlide} />
-
-      {sliderData.map((slide, idx) => {
-        return <img src={slide.image} alt="travel-image" />;
-      })}
+      <div className="image">
+        {" "}
+        {sliderData.map((slide, idx) => {
+          console.log(idx);
+          return (
+            <div
+              // className={idx === currentImage ? "slider__active" : "slide"}
+              key={idx}
+            >
+              {idx === currentImage && (
+                <img src={slide.image} alt="travel-image" />
+              )}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
