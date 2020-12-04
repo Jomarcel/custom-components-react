@@ -28,8 +28,8 @@
   cursor: pointer;
   user-select: none;
 }
-.slider > img{
+
+.image {
   border-radius: 10px;
   height: 300px;
 }
-

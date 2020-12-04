@@ -25,14 +25,15 @@ const ImageSlider = ({ slides }) => {
       <div className="image">
         {" "}
         {sliderData.map((slide, idx) => {
-          console.log(idx);
           return (
             <div
               // className={idx === currentImage ? "slider__active" : "slide"}
               key={idx}
             >
+              {console.log(idx)}
+
               {idx === currentImage && (
-                <img src={slide.image} alt="travel-image" />
+                <img src={slide.image} alt="travel-image" className="image" />
               )}
             </div>
           );
