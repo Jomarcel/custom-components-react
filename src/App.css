@@ -33,3 +33,13 @@
   border-radius: 10px;
   height: 300px;
 }
+.slider__slide{
+  opacity: 0;
+  transition-duration: 1s ease;
+  /* background-color: red; */
+}
+.slider__active{
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.05);
+}

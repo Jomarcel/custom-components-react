@@ -27,8 +27,11 @@ const ImageSlider = ({ slides }) => {
         {sliderData.map((slide, idx) => {
           return (
             <div
-              // className={idx === currentImage ? "slider__active" : "slide"}
-              key={idx}
+              className={
+                idx === currentImage ? "slider__active" : "slider__slide"
+              }
+              // className="slider__active"
+              // key={idx}
             >
               {console.log(idx)}
 
